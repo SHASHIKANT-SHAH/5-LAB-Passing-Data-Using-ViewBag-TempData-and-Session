@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+    var authorname = (String)ViewData["AuthorName"];
+    var subtitle = ViewBag.Subtitle;
+}
+<h1>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout when click here</a>
+</h1>
+
+<h1>@TempData["Message"]</h1>
+<h5 class="pt-lg-5"> ViewData Example : @ViewData["AuthorName"] @ViewData["Subtitle"] @authorname</h5>
+<h5>ViewBag Example : @ViewBag.Subtitle @ViewBag.AuthorName @subtitle</h5>
+
+
+
+
