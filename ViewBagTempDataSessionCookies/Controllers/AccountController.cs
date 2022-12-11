@@ -60,6 +60,7 @@ namespace ViewBagTempDataSessionCookies.Controllers
 
         public ViewResult Logout()
         {
+            HttpContext.Session.Clear();
             Response.Cookies.Delete("cookie1");
             Response.Cookies.Delete("cookie2");
             return View();  
